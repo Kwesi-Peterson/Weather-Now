@@ -1,11 +1,11 @@
 # Architecture
 
-The architechture for the ETL pipeline is as below:
+The architecture for the ETL pipeline is as below:
 
 ![Markdown Logo](https://github.com/Kwesi-Peterson/Weather-Now/blob/main/design/weatherNowArchitecture.jpg)
 
 Describing the steps:
-1) Use the [One Call API](https://openweathermap.org/api/one-call-api) from the Open Weather API to get access to current and forecast weather data.
+1) Use the [One Call API](https://openweathermap.org/api/one-call-api) from Open Weather Map to get access to current and forecast weather data.
 2) Store the data initially in a Bronze delta lake
 3) Regularly filter, clean and augment the data and store in a Silver data lake
 4) Copy the data into Azure Storage for long-term storage
